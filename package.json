@@ -1,7 +1,7 @@
 {
   "name": "cordlr-uptime",
   "description": "Cordlr uptime plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/seanc/cordlr-uptime",
   "author": "Sean Wilson (https://imsean.me)",
   "repository": "seanc/cordlr-uptime",
