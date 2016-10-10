@@ -2,8 +2,8 @@ const pixie = require('pixie');
 const Duration = require('duration');
 
 function uptime(bot, config) {
-  config = [uptime.name] || {};
-  const format = config.format || 'Uptime: {{hours}} hours, {{minutes}} minutes, and {{seconds}} seconds';
+  config = config[uptime.name] || {};
+  const format = config.format || 'Uptime: {{hour}} hours, {{minute}} minutes, and {{second}} seconds';
   const start = bot.readyTime;
   return function run(message) {
     const now = new Date();
