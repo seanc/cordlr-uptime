@@ -6,7 +6,8 @@ function uptime(bot, config) {
   const format = config.format || 'Uptime: {{hour}} hours, {{minute}} minutes, and {{second}} seconds';
   return function run(message) {
     const now = new Date();
-    const duration = new Duration(bot.readyTime, now);
+    const readyTime = new Date(bot.readyTimestamp);
+    const duration = new Duration(readyTime, now);
     message.reply(pixie.render(format, duration));
   }
 }
